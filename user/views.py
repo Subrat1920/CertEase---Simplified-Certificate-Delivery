@@ -72,7 +72,7 @@ def resend_otp(request):
 			mess = f"Hello {usr.first_name},\nYour OTP is {usr_otp}\nThanks!"
 
 			send_mail(
-				"Welcome to ITScorer - Verify Your Email",
+				"Welcome to CertEase - Verify Your Email",
 				mess,
 				settings.EMAIL_HOST_USER,
 				[usr.email],

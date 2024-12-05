@@ -127,7 +127,7 @@ def track(request, id, slug):
 			try:
 				connection = smtplib.SMTP("smtp.gmail.com",587)
 				connection.starttls()
-				connection.login('certeasecertgoteasy@gmail.com','zmfi gald fvjw rcgd')
+				connection.login('your-mail@example.com','your auto generated gmail password')
 				mail = EmailMessage(subject,
 					f"Hello, {s_name} \n{mess}",
 					settings.EMAIL_HOST_USER,
